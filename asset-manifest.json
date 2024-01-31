@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/splunk-sizing/static/css/main.1d441912.css",
-    "main.js": "/splunk-sizing/static/js/main.67953d2e.js",
+    "main.js": "/splunk-sizing/static/js/main.6001e7bb.js",
     "static/js/787.938caa36.chunk.js": "/splunk-sizing/static/js/787.938caa36.chunk.js",
     "index.html": "/splunk-sizing/index.html",
     "main.1d441912.css.map": "/splunk-sizing/static/css/main.1d441912.css.map",
-    "main.67953d2e.js.map": "/splunk-sizing/static/js/main.67953d2e.js.map",
+    "main.6001e7bb.js.map": "/splunk-sizing/static/js/main.6001e7bb.js.map",
     "787.938caa36.chunk.js.map": "/splunk-sizing/static/js/787.938caa36.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d441912.css",
-    "static/js/main.67953d2e.js"
+    "static/js/main.6001e7bb.js"
   ]
 }
