@@ -1,7 +1,9 @@
 
 import React, { useEffect } from "react";
 import Prism from "prismjs";
-import "../../node_modules/prismjs/themes/prism-tomorrow.css"
+import 'prismjs/components/prism-ini';
+// import "../../node_modules/prismjs/themes/prism-tomorrow.css"
+import '../prism-theme-addon.css'
 
 function ConfigView({ code, language }) {
     useEffect(() => {

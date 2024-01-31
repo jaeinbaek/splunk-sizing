@@ -85,7 +85,7 @@ function Body() {
 
     // resultFrozen = Math.round((일일수집량 * 원본압축률 * 복제팩터 * Frozen보관기간))
     // resultFrozenPerIdx = Math.round(((일일수집량 * 원본압축률 * 복제팩터 * Frozen보관기간)) / 인덱서 노드수)
-    
+
     let resultHW = Math.round((DDV * RCF * RF * DRHW) + (DDV * MSF * SF * DRHW))
     let resultHWPerIdx = Math.round(((DDV * RCF * RF * DRHW) + (DDV * MSF * SF * DRHW)) / NOI)
 
@@ -446,7 +446,7 @@ maxVolumeDataSizeMB = ` + resultCOPerIdx * 1024;
                                         <Text pt='2' fontSize='sm' mb='8px'>
                                             Splunk indexes.conf examples.
                                         </Text>
-                                        <ConfigView code={code} language="ini" />
+                                        <ConfigView code={code} language='ini' />
                                     </Box>
                                 </Stack>
                             </CardBody>
