@@ -13,9 +13,6 @@ function ToggleThemeSwitch() {
         <Flex>
           <Text fontSize='xs' as='kbd' mr='8px'>Dark/Light</Text>
           <Switch onChange={toggleColorMode}></Switch>
-          {/* <Button onClick={toggleColorMode}>
-            Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
-          </Button> */}
         </Flex>
       </div>
     );

@@ -27,7 +27,8 @@ import {
     Tr,
     Th,
     Td,
-    Tbody
+    Tbody,
+    Wrap
 } from '@chakra-ui/react'
 import ConfigView from './ConfigView';
 
@@ -113,11 +114,11 @@ maxVolumeDataSizeMB = ` + resultCOPerIdx * 1024;
 
     return (
         <div className="body">
-            <HStack spacing='24px' align="top" m='24px'>
+            <Wrap spacing='24px' align="top" m='24px'>
                 <Box>
-                    <VStack spacing='24px' >
+                    <Wrap spacing='24px' >
                         {/* input data */}
-                        <Card w={560}>
+                        <Card w={300}>
                             <CardHeader>
                                 <Heading size='md'>Input data</Heading>
                                 <Text pt='2' fontSize='sm' mb='8px'>
@@ -234,7 +235,7 @@ maxVolumeDataSizeMB = ` + resultCOPerIdx * 1024;
                             </CardBody>
                         </Card>
                         {/* Data Retention */}
-                        <Card w={560}>
+                        <Card w={300}>
                             <CardHeader>
                                 <Heading size='md'>Data Retention</Heading>
                                 <Text pt='2' fontSize='sm' mb='8px'>
@@ -310,7 +311,7 @@ maxVolumeDataSizeMB = ` + resultCOPerIdx * 1024;
                             </CardBody>
                         </Card>
                         {/* Architecture */}
-                        <Card w={560}>
+                        <Card w={300}>
                             <CardHeader>
                                 <Heading size='md'>Architecture</Heading>
                                 <Text pt='2' fontSize='sm' mb='8px'>
@@ -385,12 +386,12 @@ maxVolumeDataSizeMB = ` + resultCOPerIdx * 1024;
                                 </Stack>
                             </CardBody>
                         </Card>
-                    </VStack>
+                    </Wrap>
                 </Box>
                 <Stack direction={['column', 'row']} spacing='24px'>
                     {/* Result */}
                     <Box>
-                        <Card w={560}>
+                        <Card w={450}>
                             <CardHeader>
                                 <Heading size='md'>Result</Heading>
                                 <Text pt='2' fontSize='sm' mb='8px'>
@@ -440,9 +441,7 @@ maxVolumeDataSizeMB = ` + resultCOPerIdx * 1024;
                                             </Table>
                                         </TableContainer>
                                     </Box>
-
                                     <Box>
-
                                         <Heading size='xs' textTransform='uppercase'>
                                             Config Examples
                                         </Heading>
@@ -458,7 +457,7 @@ maxVolumeDataSizeMB = ` + resultCOPerIdx * 1024;
                         </Card>
                     </Box>
                 </Stack>
-            </HStack>
+            </Wrap>
         </div>
     );
 }
