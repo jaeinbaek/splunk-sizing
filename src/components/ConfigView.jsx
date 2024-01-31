@@ -6,9 +6,11 @@ import 'prismjs/components/prism-ini';
 import '../prism-theme-addon.css'
 
 function ConfigView({ code, language }) {
+
     useEffect(() => {
+        console.log('rerendered');
         Prism.highlightAll();
-      }, []);
+      }, [code]);
 
     return (
         <div className="configview">

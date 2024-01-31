@@ -1,7 +1,12 @@
-import { useColorMode, Button, Switch, Text, Flex} from '@chakra-ui/react'
+import { 
+  useColorMode,
+  Switch,
+  Text,
+  Flex
+  } from '@chakra-ui/react'
 
 function ToggleThemeSwitch() {
-    const { colorMode, toggleColorMode } = useColorMode()
+    const { toggleColorMode } = useColorMode()
 
     return (
       <div class="switch">
