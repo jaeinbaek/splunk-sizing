@@ -382,7 +382,7 @@ maxVolumeDataSizeMB = ` + resultCOPerIdx * 1024;
                             <CardHeader>
                                 <Heading size='md'>Result</Heading>
                                 <Text pt='2' fontSize='sm' mb='8px'>
-                                    View a summary of all your clients over the last month.
+                                    Check your results.
                                 </Text>
                             </CardHeader>
                             <CardBody>

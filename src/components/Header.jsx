@@ -8,7 +8,7 @@ function Header() {
                 <Box>
                 <Heading size='lg'>Splunk Sizer</Heading>
                 <Text pt='2' fontSize='sm' mb='8px'>
-                    Storage planing calculator for splunk
+                    Storage planing calculator for splunk 💾
                 </Text>
                 </Box>
                 <Spacer />
