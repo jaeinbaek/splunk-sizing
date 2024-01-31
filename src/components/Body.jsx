@@ -91,6 +91,13 @@ function Body() {
     let resultTotal = resultHW + resultCO + resultFR
     let resultTotalPerIdx = resultHWPerIdx + resultCOPerIdx + resultFRPerIdx
 
+    let code = `[volume:hot_examples]
+path = /mnt/fast_disk
+maxVolumeDataSizeMB = ` + resultHWPerIdx * 1024 + `
+
+[volume:cold_examples]
+path = /mnt/big_disk
+maxVolumeDataSizeMB = ` + resultCOPerIdx * 1024;
 
     return (
         <div className="body">
@@ -430,7 +437,7 @@ function Body() {
                                         <Text pt='2' fontSize='sm' mb='8px'>
                                             Splunk indexes.conf examples.
                                         </Text>
-                                        <ConfigView code="hello=world" language="ini" />
+                                        <ConfigView code={code} language="ini" />
                                     </Box>
                                 </Stack>
                             </CardBody>
