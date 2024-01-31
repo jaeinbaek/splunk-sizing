@@ -77,6 +77,15 @@ function Body() {
     const [SF, setSF] = React.useState('2')
 
     //// Result
+    //     resultHotworm = Math.round((일일수집량 * 원본압축률 * 복제팩터 * H/W보관기간) + (일일수집량 * 메타데이터압축률 * 검색팩터 * H/W보관기간))
+    // resultHotwormPerIdx = Math.round(((일일수집량 * 원본압축률 * 복제팩터 * H/W보관기간) + (일일수집량 * 메타데이터압축률 * 검색팩터 * H/W보관기간)) / 인덱서 노드수)
+
+    // resultCold = Math.round((일일수집량 * 원본압축률 * 복제팩터 * Cold 보관기간) + (일일수집량 * 메타데이터압축률 * 검색팩터 * Cold 보관기간))
+    // resultColdPerIdx = Math.round(((일일수집량 * 원본압축률 * 복제팩터 * Cold 보관기간) + (일일수집량 * 메타데이터압축률 * 검색팩터 * Cold 보관기간)) / 인덱서 노드수)
+
+    // resultFrozen = Math.round((일일수집량 * 원본압축률 * 복제팩터 * Frozen보관기간))
+    // resultFrozenPerIdx = Math.round(((일일수집량 * 원본압축률 * 복제팩터 * Frozen보관기간)) / 인덱서 노드수)
+    
     let resultHW = Math.round((DDV * RCF * RF * DRHW) + (DDV * MSF * SF * DRHW))
     let resultHWPerIdx = Math.round(((DDV * RCF * RF * DRHW) + (DDV * MSF * SF * DRHW)) / NOI)
 
